@@ -1,6 +1,19 @@
 # Using A Docker Zookeeper Image
 
-_This is a simple example that sets up a five server Zookeeper cluster._
+_This is a simple example that sets up a three server Zookeeper cluster._
+
+```shell
+./launch-cluster
+```
+
+the above command launches a 3 server zookeeper cluster while exposing the leader for client connections
+on port 2181 of localhost
+
+```shell
+./shutdown-cluster
+```
+
+the above command shuts down the cluster that was brought up using launch-cluster
 
 ## Requirements
 

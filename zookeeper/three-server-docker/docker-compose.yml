@@ -9,6 +9,8 @@ services:
       context: .
       args:
         myid: 1
+    ports:
+      - "2181:2181"
     networks:
       - back
   zookeeper2:
